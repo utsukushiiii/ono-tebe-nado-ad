@@ -1,22 +1,19 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 182px; 
+  gap: 183px;
 }
-
 
 .frame {
   width: 100%;
   margin: 0 auto;
 }
 
-
-
 .header {
   display: grid;
-  align-items: center;
   grid-template-columns: 1.51fr 2fr 1.5fr;
-  padding: 91px 52px 88px; 
+  align-items: center;
+  padding: 92px 51px 89px;
 }
 
 .nav-list {
@@ -42,8 +39,8 @@ main {
 }
 
 .hover-link:hover {
-  color: #fff;
   background-color: #000000;
+  color: #fff;
 }
 
 .brand {
@@ -62,7 +59,6 @@ main {
   font-style: inherit;
 }
 
-
 .contacts-block {
   font-style: inherit;
 }
@@ -79,10 +75,9 @@ main {
   line-height: 1.35;
 }
 
-
 .hero {
   position: relative;
-  padding: 165px 50px 49px 50px; 
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,12 +85,11 @@ main {
 
 .shade {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6; 
+  opacity: 0.6000000238418579;
   background-color: #000000;
 }
 
@@ -105,12 +99,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 100px;
+  color: #fff;
   font-weight: bold;
+  font-size: 100px;
   line-height: 1.15;
   letter-spacing: 30px;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .hero-line {
@@ -131,7 +125,6 @@ main {
   letter-spacing: 60px;
 }
 
-
 .no-space {
   letter-spacing: normal;
 }
@@ -140,45 +133,44 @@ main {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  gap: 79px; 
-  padding: 135px 0 0; 
+  align-items: center;
+  gap: 78px;
+  padding-top: 136px;
 }
 
 .hero-tagline {
+  color: #fff;
   font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 18px;
-  color: #fff;
 }
 
 .bid-btn {
-  border: 1px #fff solid;
+  border: 1px solid #fff;
   padding: 14px 32px;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 1;
   text-transform: uppercase;
-  cursor: pointer;
-  color: #fff;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .bid-btn:hover {
-  background-color: #fff;
   color: #000000;
+  background-color: #fff;
 }
-
 
 .lots-area {
   padding: 0 50px;
 }
 
 .lots-title {
-  padding: 0 0 29px 40px;
+  padding: 0 0 30px 40px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -233,20 +225,20 @@ main {
 .lot-name {
   position: relative;
   z-index: 1;
-  font-size: 22px;
+  color: #fff;
   font-weight: bold;
+  font-size: 22px;
   line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .lot-desc {
   position: relative;
   z-index: 1;
+  color: #fff;
   font-size: 20px;
   line-height: 1.2;
-  color: #fff;
 }
 
 .more-link {
@@ -258,12 +250,10 @@ main {
   text-underline-position: under;
 }
 
-
-
 .about-area {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 23px; 
+  column-gap: 24px;
   padding: 0 50px;
 }
 
@@ -272,7 +262,7 @@ main {
 }
 
 .about-side--text {
-  grid-column: 2/4;
+  grid-column: 2 / 4;
 }
 
 .about-badge {
@@ -290,7 +280,7 @@ main {
 }
 
 .about-title {
-  padding: 99px 0 105px;
+  padding: 100px 0 104px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -308,17 +298,15 @@ main {
   line-height: normal;
 }
 
-
-
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 179px 50px 81px;
+  padding: 180px 50px 80px;
 }
 
 .footer-nav-list {
-  list-style: none;
   text-align: center;
+  list-style: none;
 }
 
 .footer-nav-link {
@@ -341,4 +329,3 @@ main {
   width: auto;
   height: 48px;
 }
-/* для перезапуска автотестов */
