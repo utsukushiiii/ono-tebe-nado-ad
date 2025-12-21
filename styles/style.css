@@ -62,7 +62,7 @@ main {
   font-style: inherit;
 }
 
-/* Контакты */
+
 .contacts-block {
   font-style: inherit;
 }
@@ -341,3 +341,4 @@ main {
   width: auto;
   height: 48px;
 }
+/* для перезапуска автотестов */
