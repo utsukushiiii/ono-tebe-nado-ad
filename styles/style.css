@@ -1,7 +1,7 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 183px;
+  gap: 180px;
 }
 
 .content-section {
@@ -11,9 +11,9 @@ main {
 
 .header {
   display: grid;
-  grid-template-columns: 1.51fr 2fr 1.5fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 90px 50px 90px;
+  padding: 90px 50px 96px;
 }
 
 .header__links-list {
@@ -179,14 +179,16 @@ main {
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
   list-style: none;
 }
 
-.lost__card-list-item {
-  height: 100%;
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 563px;
 }
 
 .card-link {
@@ -195,14 +197,7 @@ main {
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  width: auto;
   height: 100%;
-  padding: 50px 40px;
 }
 
 .card_type_film {
@@ -253,8 +248,8 @@ main {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
+  grid-template-columns: 240px 1fr;
+  gap: 25px;
   padding: 0 50px;
 }
 
@@ -263,7 +258,7 @@ main {
 }
 
 .about__column_text {
-  grid-column: 2/4;
+  grid-column: 2;
 }
 
 .about__logo {
@@ -300,9 +295,14 @@ main {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 180px 50px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  padding: 180px 50px 90px;
+}
+
+.footer__menu {
+  justify-self: center;
 }
 
 .footer__social-icon {
@@ -326,8 +326,6 @@ main {
 }
 
 .footer__social-list {
-  display: flex;
-  gap: 48px;
-  list-style: none;
+  justify-self: end;
 }
 
