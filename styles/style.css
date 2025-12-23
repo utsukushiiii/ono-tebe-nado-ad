@@ -11,7 +11,7 @@ main {
 
 .header {
   display: grid;
-  grid-template-columns: 1.51fr 2fr 1.5fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 51px 89px;
 }
@@ -36,7 +36,7 @@ main {
 
 .text-link:hover {
   background-color: #000000;
-  color: #FFF;
+  color: #fff;
 }
 
 .header__link_active {
@@ -60,7 +60,6 @@ main {
 
 .header__address {
   justify-self: end;
-  font-style: inherit;
 }
 
 .address__item {
@@ -77,7 +76,7 @@ main {
 
 .cover {
   position: relative;
-  padding: 165px 50px 50px 50px;
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,12 +84,9 @@ main {
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
   background-color: #000000;
 }
 
@@ -100,7 +96,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   font-size: 100px;
   line-height: 1.15;
@@ -137,11 +133,11 @@ main {
   justify-content: flex-end;
   align-items: center;
   gap: 78px;
-  padding: 136px 0 0;
+  padding-top: 136px;
 }
 
 .cover__description-text {
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
@@ -149,10 +145,10 @@ main {
 }
 
 .bet-button {
-  border: 1px #FFF solid;
+  border: 1px solid #fff;
   padding: 14px 32px;
-  color: #FFF;
-  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 1;
@@ -163,7 +159,7 @@ main {
 
 .bet-button:hover {
   color: #000000;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .lots {
@@ -179,20 +175,22 @@ main {
 }
 
 .lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-
 .lots__card-list-item {
-  height: 100%
+  height: 100%;
 }
 
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -201,7 +199,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  width: auto;
   height: 100%;
   padding: 50px 40px;
 }
@@ -227,7 +224,7 @@ main {
 .card__title {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.2;
@@ -238,7 +235,7 @@ main {
 .card__text {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -254,8 +251,8 @@ main {
 
 .about {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
   padding: 0 50px;
 }
 
@@ -264,7 +261,7 @@ main {
 }
 
 .about__column_text {
-  grid-column: 2/4;
+  grid-column: 2 / 4;
 }
 
 .about__logo {
@@ -298,6 +295,7 @@ main {
 .about__text p {
   font-size: 20px;
   line-height: normal;
+  margin: 0;
 }
 
 .footer {
@@ -306,14 +304,11 @@ main {
   padding: 180px 50px 80px;
 }
 
-.footer__social-icon {
-  width: auto;
-  height: 48px;
-}
-
 .footer__menu-list {
-  text-align: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .footer__menu-link {
@@ -330,4 +325,11 @@ main {
   display: flex;
   gap: 48px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social-icon {
+  width: auto;
+  height: 48px;
 }
